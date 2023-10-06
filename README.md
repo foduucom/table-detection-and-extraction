@@ -4,7 +4,8 @@
   The YOLOv8s Table Detection model is an object detection model based on the YOLO (You Only Look Once) framework. It is designed to detect tables, whether they are bordered or borderless, in images. The model has been fine-tuned on a vast dataset and achieved high accuracy in detecting tables and distinguishing between bordered and borderless ones.
 
 ##Model Details
-Model Description
+
+##Model Description
   The YOLOv8s Table Detection model serves as a versatile solution for precisely identifying tables within images, whether they exhibit a bordered or borderless design. Notably, this model's capabilities extend beyond mere detection – it plays a crucial role in addressing the complexities of unstructured documents. By employing advanced techniques such as bounding box delineation, the model enables users to isolate tables of interest within the visual content.
 
 What sets this model apart is its synergy with Optical Character Recognition (OCR) technology. This seamless integration empowers the model to not only locate tables but also to extract pertinent data contained within. The bounding box information guides the cropping of tables, which is then coupled with OCR to meticulously extract textual data, streamlining the process of information retrieval from unstructured documents.
@@ -41,7 +42,7 @@ User collaboration is actively encouraged to enrich the model's capabilities. By
 
 
 ##Recommendations
-Users should be informed about the model's limitations and potential biases. Further testing and validation are advised for specific use cases to evaluate its performance accurately.
+  Users should be informed about the model's limitations and potential biases. Further testing and validation are advised for specific use cases to evaluate its performance accurately.
 
 #How to Get Started with the Model
   To begin using the YOLOv8s Table Detection model, follow these steps:
@@ -49,26 +50,28 @@ Users should be informed about the model's limitations and potential biases. Fur
 pip install ultralyticsplus==0.0.28 ultralytics==8.0.43
 
 ##Load model and perform prediction
-from ultralyticsplus import YOLO, render_result
+
+  from ultralyticsplus import YOLO, render_result
 
 ##load model
+
 model = YOLO('foduucom/table-detection-and-extraction')
 
 ##set model parameters
-model.overrides['conf'] = 0.25  # NMS confidence threshold
-model.overrides['iou'] = 0.45  # NMS IoU threshold
-model.overrides['agnostic_nms'] = False  # NMS class-agnostic
-model.overrides['max_det'] = 1000  # maximum number of detections per image
+  model.overrides['conf'] = 0.25  # NMS confidence threshold
+  model.overrides['iou'] = 0.45  # NMS IoU threshold
+  model.overrides['agnostic_nms'] = False  # NMS class-agnostic
+  model.overrides['max_det'] = 1000  # maximum number of detections per image
 
 ##set image
-image = '/path/to/your/document/images'
+  image = '/path/to/your/document/images'
 
 ##perform inference
-results = model.predict(image)
+  results = model.predict(image)
 
 ##observe results
-print(results[0].boxes)
-render = render_result(model=model, image=image, result=results[0])
-render.show()
+  print(results[0].boxes)
+  render = render_result(model=model, image=image, result=results[0])
+  render.show()
 
 
