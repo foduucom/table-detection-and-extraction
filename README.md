@@ -1,11 +1,11 @@
 # table-detection-and-extraction
 
-##Model Summary
+## Model Summary
   The YOLOv8s Table Detection model is an object detection model based on the YOLO (You Only Look Once) framework. It is designed to detect tables, whether they are bordered or borderless, in images. The model has been fine-tuned on a vast dataset and achieved high accuracy in detecting tables and distinguishing between bordered and borderless ones.
 
-##Model Details
+## Model Details
 
-##Model Description
+## Model Description
   The YOLOv8s Table Detection model serves as a versatile solution for precisely identifying tables within images, whether they exhibit a bordered or borderless design. Notably, this model's capabilities extend beyond mere detection – it plays a crucial role in addressing the complexities of unstructured documents. By employing advanced techniques such as bounding box delineation, the model enables users to isolate tables of interest within the visual content.
 
 What sets this model apart is its synergy with Optical Character Recognition (OCR) technology. This seamless integration empowers the model to not only locate tables but also to extract pertinent data contained within. The bounding box information guides the cropping of tables, which is then coupled with OCR to meticulously extract textual data, streamlining the process of information retrieval from unstructured documents.
@@ -20,23 +20,23 @@ We invite you to explore the potential of this model and its data extraction cap
 User collaboration is actively encouraged to enrich the model's capabilities. By contributing table images of different designs and types, users play a pivotal role in enhancing the model's ability to detect a diverse range of tables accurately. Community participation can be facilitated through our platform or by reaching out to us at info@foduu.com. We value collaborative efforts that drive continuous improvement and innovation in table detection and extraction.
 
 
-##Supported Labels
+## Supported Labels
   ['bordered', 'borderless'] 
 
 
 
-##Training Data
+## Training Data
   The model is trained on a diverse dataset containing images of tables from various sources. The dataset includes examples of both bordered and borderless tables, capturing different designs and styles.
 
-##Training Procedure
+## Training Procedure
   The training process involves extensive computation and is conducted over multiple epochs. The model's weights are adjusted to minimize detection loss and optimize performance.
 
-#Metrics
+# Metrics
   mAP@0.5 (box):
   All: 0.962
   Bordered: 0.961
   Borderless: 0.963
-##Model Architecture and Objective
+## Model Architecture and Objective
   The YOLOv8s architecture employs a modified CSPDarknet53 as its backbone, along with self-attention mechanisms and feature pyramid networks. These components contribute to the model's ability to detect and classify tables accurately, considering variations in size, design, and style.
 
 
