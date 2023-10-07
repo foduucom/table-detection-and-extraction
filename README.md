@@ -32,10 +32,10 @@ User collaboration is actively encouraged to enrich the model's capabilities. By
   The training process involves extensive computation and is conducted over multiple epochs. The model's weights are adjusted to minimize detection loss and optimize performance.
 
 # Metrics
-  mAP@0.5 (box):
-  All: 0.962
-  Bordered: 0.961
-  Borderless: 0.963
+  * mAP@0.5 (box):
+  * All: 0.962
+  * Bordered: 0.961
+  * Borderless: 0.963
 ## Model Architecture and Objective
   The YOLOv8s architecture employs a modified CSPDarknet53 as its backbone, along with self-attention mechanisms and feature pyramid networks. These components contribute to the model's ability to detect and classify tables accurately, considering variations in size, design, and style.
 
@@ -48,29 +48,32 @@ User collaboration is actively encouraged to enrich the model's capabilities. By
   To begin using the YOLOv8s Table Detection model, follow these steps:
 ```
 pip install ultralyticsplus==0.0.28 ultralytics==8.0.43
-```
-## Load model and perform prediction
-```
-  from ultralyticsplus import YOLO, render_result
-```
-## load model
-```
+
+#Load model and perform prediction
+
+from ultralyticsplus import YOLO, render_result
+
+#load model
+
 model = YOLO('foduucom/table-detection-and-extraction')
 
-**set model parameters**
+#set model parameters
   model.overrides['conf'] = 0.25  # NMS confidence threshold
   model.overrides['iou'] = 0.45  # NMS IoU threshold
   model.overrides['agnostic_nms'] = False  # NMS class-agnostic
   model.overrides['max_det'] = 1000  # maximum number of detections per image
 
-## set image
+#set image
   image = '/path/to/your/document/images'
 
-## perform inference
+#erform inference
   results = model.predict(image)
 
-## observe results
+#observe results
   print(results[0].boxes)
   render = render_result(model=model, image=image, result=results[0])
   render.show()
 ```
+
+## Contact 
+For inquiries and contributions, please contact us at - [info@foduu.com](mailto:info@foduu.com)
