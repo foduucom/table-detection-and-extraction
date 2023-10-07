@@ -48,16 +48,16 @@ User collaboration is actively encouraged to enrich the model's capabilities. By
   To begin using the YOLOv8s Table Detection model, follow these steps:
 ```
 pip install ultralyticsplus==0.0.28 ultralytics==8.0.43
-
+```
 ## Load model and perform prediction
-
+```
   from ultralyticsplus import YOLO, render_result
-
+```
 ## load model
-
+```
 model = YOLO('foduucom/table-detection-and-extraction')
 
-## set model parameters
+**set model parameters**
   model.overrides['conf'] = 0.25  # NMS confidence threshold
   model.overrides['iou'] = 0.45  # NMS IoU threshold
   model.overrides['agnostic_nms'] = False  # NMS class-agnostic
