@@ -1,5 +1,6 @@
-# **Table-detection-and-extraction**
 [![](https://img.shields.io/badge/hugging_face-space-yellow)](https://huggingface.co/spaces/foduucom/table-extraction-yolov8)
+# **Table-detection-and-extraction**
+
 ![](https://github.com/foduucom/table-detection-and-extraction/blob/main/thumbnail.jpg)
 ## Model Summary
   The YOLOv8s Table Detection model is an object detection model based on the YOLO (You Only Look Once) framework. It is designed to detect tables, whether they are bordered or borderless, in images. The model has been fine-tuned on a vast dataset and achieved high accuracy in detecting tables and distinguishing between bordered and borderless ones.
