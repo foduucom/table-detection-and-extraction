@@ -46,7 +46,7 @@ User collaboration is actively encouraged to enrich the model's capabilities. By
 
 # How to Get Started with the Model
   To begin using the YOLOv8s Table Detection model, follow these steps:
-'''
+```
 pip install ultralyticsplus==0.0.28 ultralytics==8.0.43
 
 ## Load model and perform prediction
@@ -73,4 +73,4 @@ model = YOLO('foduucom/table-detection-and-extraction')
   print(results[0].boxes)
   render = render_result(model=model, image=image, result=results[0])
   render.show()
-'''
+```
