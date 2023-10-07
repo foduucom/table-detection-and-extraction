@@ -12,10 +12,10 @@ What sets this model apart is its synergy with Optical Character Recognition (OC
 
 We invite you to explore the potential of this model and its data extraction capabilities. For those interested in harnessing its power or seeking further collaboration, we encourage you to reach out to us at info@foduu.com. Whether you require assistance, customization, or have innovative ideas, our collaborative approach is geared towards addressing your unique challenges. Additionally, you can actively engage with our vibrant community section for valuable insights and collective problem-solving. Your input drives our continuous improvement, as we collectively pave the way towards enhanced data extraction and document analysis.
 
-* Developed by: FODUU AI
+### Developed by: FODUU AI
 * Model type: Object Detection
 * Task: Table Detection (Bordered and Borderless)
-  Furthermore, the YOLOv8s Table Detection model is not limited to table detection alone. It is a versatile tool that contributes to the processing of unstructured documents. By utilizing advanced bounding box techniques, the model empowers users to isolate tables within the document's visual content. What sets this model apart is its seamless integration with Optical Character Recognition (OCR) technology. The combination of bounding box information and OCR allows for precise data extraction from the tables. This comprehensive approach streamlines the process of information retrieval from complex documents.
+Furthermore, the YOLOv8s Table Detection model is not limited to table detection alone. It is a versatile tool that contributes to the processing of unstructured documents. By utilizing advanced bounding box techniques, the model empowers users to isolate tables within the document's visual content. What sets this model apart is its seamless integration with Optical Character Recognition (OCR) technology. The combination of bounding box information and OCR allows for precise data extraction from the tables. This comprehensive approach streamlines the process of information retrieval from complex documents.
 
 User collaboration is actively encouraged to enrich the model's capabilities. By contributing table images of different designs and types, users play a pivotal role in enhancing the model's ability to detect a diverse range of tables accurately. Community participation can be facilitated through our platform or by reaching out to us at info@foduu.com. We value collaborative efforts that drive continuous improvement and innovation in table detection and extraction.
 
